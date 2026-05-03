@@ -3,16 +3,14 @@ int j = -3;
 
 for (int i = 0; i < 3 && j <= 0; i++) {
 
-    switch (j + 2) {
-        case 3:
-        case 2:
-            j--;
-            break;
-        case 0:
-            j += 2;
-            break;
-        default:
-            j = 0;
+    int val = j + 2;
+
+    if (val == 3 || val == 2) {
+        j--;
+    } else if (val == 0) {
+        j += 2;
+    } else {
+        j = 0;
     }
 
     if (j <= 0) {
@@ -20,7 +18,7 @@ for (int i = 0; i < 3 && j <= 0; i++) {
     }
 }
 
-🔹 2. Python
+🔹 2. Python (esse já estava certo 👍)
 j = -3
 i = 0
 
@@ -44,16 +42,14 @@ int j = -3;
 
 for (int i = 0; i < 3 && j <= 0; i++) {
 
-    switch (j + 2) {
-        case 3:
-        case 2:
-            j--;
-            break;
-        case 0:
-            j += 2;
-            break;
-        default:
-            j = 0;
+    int val = j + 2;
+
+    if (val == 3 || val == 2) {
+        j--;
+    } else if (val == 0) {
+        j += 2;
+    } else {
+        j = 0;
     }
 
     if (j <= 0) {
